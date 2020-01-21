@@ -450,8 +450,6 @@ button img {
     background-image: url(img/subscribeBG.png);
     background-repeat: no-repeat;
     background-position: center;
-    /*opacity: 0.5;*/
-
     display: flex;
     justify-content: space-between;
     align-items: center;
