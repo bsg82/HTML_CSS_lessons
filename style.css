@@ -54,6 +54,17 @@ a {
     margin-right: 26px;
 }
 
+.myAccount{
+    font-size: 15px;
+color: #ffffff;
+text-align: center;
+letter-spacing: 0.03em;
+line-height: 32px;
+background-color: #f16d7f;
+height: 38px;
+width: 130px;
+}
+
 .menu {
     display: flex;
     justify-content: center;
@@ -444,8 +455,8 @@ button img {
 .subscribe {
     width: 1600px;
     height: fit-content;
-    padding-top: 97px;
-    outline: 1px solid black;
+    margin-top: 97px;
+    /*outline: 1px solid black;*/
     background-color: #ffffff;
     background-image: url(img/subscribeBG.png);
     background-repeat: no-repeat;
@@ -453,16 +464,15 @@ button img {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
+    padding: 0 calc(50% - 700px);
+    position: relative;
 
 
 }
 
 .message {
-    width: 100%;
+    width: 50%;
     height: 438px;
-
-
 }
 
 .portrait {
@@ -473,9 +483,8 @@ button img {
 .portrait img {
     width: 83px;
     height: 83px;
-    margin: 0 30px 0 0;
-
-
+    padding-left: 230px;
+ 
 }
 
 .messageText p {
@@ -485,18 +494,19 @@ button img {
     line-height: 26px;
     display: block;
     margin: 0;
-    
-letter-spacing: 0.03em;
+    letter-spacing: 0.03em;
 width: 425px;
 height: 200px;
+padding-left: 340px;
 }
 
 
 .name {
-    dcolor: #f16d7f;
+    color: #f16d7f;
     font-size: 16px;
     font-weight: 700;
-    margin: 15px 0 0 0;
+    padding-left: 340px;
+    
 
 }
 
@@ -504,11 +514,11 @@ height: 200px;
     color: #222224;
     font-size: 12px;
     font-weight: 400;
-    margin: 5px 0 0 0px;
+    padding-left: 340px;
 }
 
 .pagination {
-    /*position: absolute;*/
+   
     width: 1600px;
     bottom: 19px;
     padding-left: 344px;
@@ -535,12 +545,12 @@ height: 200px;
 }
 
 .newsSubscribe {
-    width: 50%;
+    width: 800px;
     display: flex;
     align-items: center;
-    flex-wrap: wrap;
     flex-direction: column;
-    flex-wrap: wrap;
+    
+    
 }
 
 .headlineHead {
@@ -587,8 +597,9 @@ footer {
     height: 428px;
     display: flex;
     flex-wrap: wrap;
-    padding-top: 123px;
-    padding-left: 228px;
+    margin-top: 123px;
+    margin-left: 228px;
+    padding: 0 calc(50% - 570px);
 }
 
 .footerContent {
@@ -599,7 +610,7 @@ footer {
 
 .footerText,
 .footerMenu {
-    width: 800px;
+    width: 50%;
 
 }
 
@@ -652,12 +663,9 @@ footer {
     line-height: 59px;
 }
 
-/*.Complist,
-.Infolist,
-.ShopCatlist{
-
-}*/
 .rights {
+    display: flex;
+    justify-content: flex-start;
     background-color: #e6e6e6;
     width: 1600px;
     height: 79px;
@@ -668,4 +676,13 @@ footer {
     text-align: center;
     letter-spacing: 0.03em;
     line-height: 42px;
+}
+
+h6{
+    font-size: 16px;
+color: #7a7a7a;
+text-align: right;
+letter-spacing: 0.03em;
+line-height: 42px;
+
 }
