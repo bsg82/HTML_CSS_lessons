@@ -54,15 +54,15 @@ a {
     margin-right: 26px;
 }
 
-.myAccount{
+.myAccount {
     font-size: 15px;
-color: #ffffff;
-text-align: center;
-letter-spacing: 0.03em;
-line-height: 32px;
-background-color: #f16d7f;
-height: 38px;
-width: 130px;
+    color: #ffffff;
+    text-align: center;
+    letter-spacing: 0.03em;
+    line-height: 32px;
+    background-color: #f16d7f;
+    height: 38px;
+    width: 130px;
 }
 
 .menu {
@@ -81,6 +81,78 @@ width: 130px;
     padding: 20px;
     display: block;
 }
+.menu__list{
+    position: relative;
+}
+
+.drop {
+    background-color: #ffffff;
+    border-radius: 5px;
+    padding: 12px 20px;
+    border: 1px #ececec solid;
+    display: none;
+    top: 52px;
+    position: absolute;
+}
+
+.drop_last {
+    right: 0;
+}
+
+.drop_flex {
+    width: 234px;
+    margin-right: 46px;
+}
+
+.drop_button {
+    top: 20px;
+}
+
+.menu__list:hover .drop {
+    display: flex;
+}
+
+.drop_flex:last-of-type {
+    margin-right: 0;
+}
+
+.drop_ul {
+    list-style-type: none;
+}
+
+.drop_link {
+    font-size: 14px;
+    color: #646464;
+    text-align: right;
+    letter-spacing: 0.03em;
+    line-height: 28px;
+    
+    /*из шаблона, отступы балансировать, убрать по 8ПХ*/
+}
+
+.drop_link:hover {
+    color:#f16d7f;
+    
+}
+
+.drop_h3 {
+    font-size: 14px;
+    color: #232323;
+
+    letter-spacing: 0.03em;
+
+    text-transform: uppercase;
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    /*из шаблона
+    Высота шрифта не надо text align ne nado*/
+    padding-bottom: 8px;
+    padding-top: 8px;
+    border-bottom: 1px solid #e8e8e8;
+    margin-bottom: 8px;
+}
+
 
 .promo {
     background-color: #e8e8e8;
@@ -139,6 +211,11 @@ width: 130px;
     padding: 0 15px;
     line-height: 38px;
     border-radius: 3px 0 0 3px;
+    position: relative;
+}
+
+.header__browse .drop {
+    display: flex;
 }
 
 .browse_text {
@@ -458,7 +535,7 @@ button img {
     margin-top: 97px;
     /*outline: 1px solid black;*/
     background-color: #ffffff;
-    background-image: url(img/subscribeBG.png);
+    background-image: url(img/subscribeBG.png), url(img/2196.png);
     background-repeat: no-repeat;
     background-position: center;
     display: flex;
@@ -484,7 +561,7 @@ button img {
     width: 83px;
     height: 83px;
     padding-left: 230px;
- 
+
 }
 
 .messageText p {
@@ -495,9 +572,9 @@ button img {
     display: block;
     margin: 0;
     letter-spacing: 0.03em;
-width: 425px;
-height: 200px;
-padding-left: 340px;
+    width: 425px;
+    height: 200px;
+    padding-left: 340px;
 }
 
 
@@ -506,7 +583,7 @@ padding-left: 340px;
     font-size: 16px;
     font-weight: 700;
     padding-left: 340px;
-    
+
 
 }
 
@@ -518,7 +595,7 @@ padding-left: 340px;
 }
 
 .pagination {
-   
+
     width: 1600px;
     bottom: 19px;
     padding-left: 344px;
@@ -549,8 +626,8 @@ padding-left: 340px;
     display: flex;
     align-items: center;
     flex-direction: column;
-    
-    
+
+
 }
 
 .headlineHead {
@@ -600,11 +677,13 @@ footer {
     margin-top: 123px;
     margin-left: 228px;
     padding: 0 calc(50% - 570px);
+    flex: 0 0 auto;
 }
 
 .footerContent {
     display: flex;
     flex-direction: row;
+    width: 100%;
 
 }
 
@@ -665,12 +744,11 @@ footer {
 
 .rights {
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     background-color: #e6e6e6;
     width: 1600px;
     height: 79px;
-    text-align: center;
-    vertical-align: middle;
+    
     font-size: 16px;
     color: #7a7a7a;
     text-align: center;
@@ -678,11 +756,33 @@ footer {
     line-height: 42px;
 }
 
-h6{
+/*.rights_text{
+    float: left;
+}*/
+.footer_h6 {
     font-size: 16px;
-color: #7a7a7a;
-text-align: right;
-letter-spacing: 0.03em;
-line-height: 42px;
+    color: #7a7a7a;
+    text-align: right;
+    letter-spacing: 0.03em;
+    line-height: 42px;
+    
 
+}
+.socNet{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    
+    
+}
+
+/*fa-facebook-square
+fa-twitter-square"
+fa-linkedin"
+fa-pinterest-square
+fa-google-plus-square*/
+
+.icon{
+    font-size: 32px;
+    
 }
