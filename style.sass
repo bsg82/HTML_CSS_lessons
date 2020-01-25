@@ -525,29 +525,27 @@ a
 .subscribe 
   width: 1600px
   height: 438px
-  margin-top: 97px
-  /*outline: 1px solid black*/
-  background-color: #ffffff
-  background-image: url(img/subscribeBG.png), url(img/2196.png)
+  background-image: url(img/2196.png), url(img/subscribeBG.png)
   background-repeat: no-repeat
   background-position: center
   display: flex
-  justify-content: space-around
+  justify-content: space-between
   align-items: center
-  padding: 0 calc(50% - 700px)
   position: relative
+  margin: 97px auto 0
 
 
-
-
-.message 
+.message
   width: 50%
   height: 438px
+  padding-top: 123px
 
 
 .portrait 
   width: fit-content
   height: fit-content
+  float: left
+
 
 
 .portrait img 
@@ -569,9 +567,7 @@ a
   height: 200px
   padding-left: 340px
 
-
-
-.name 
+.name
   color: $ColorSite1
   font-size: 16px
   font-weight: 700
@@ -629,6 +625,7 @@ a
   font-size: 14px
   font-weight: 400
   margin: 3px 0 0 0
+  padding-bottom: 35px
 
 
 input[type=email] 
@@ -660,11 +657,7 @@ footer
   height: 428px
   display: flex
   flex-wrap: wrap
-  margin-top: 123px
-  margin-left: 228px
-
-  flex: 0 0 auto
-
+  margin: 109px auto 0
 
 .footerContent 
   display: flex
@@ -696,6 +689,7 @@ footer
   padding-left: 62px
 
 
+
 .Company_h4
   font-size: 18px
   font-weight: bold
@@ -712,7 +706,7 @@ footer
 .shopCat_h4
   @extend .Company_h4
 
-.company
+.company li
   font-size: 16px
   color: #898989
   text-align: left
@@ -721,11 +715,30 @@ footer
   list-style-type: none
   text-transform: capitalize
 
+.company li>a
+  color: #898989
+.inform li>a
+  color: #898989
+.shopCat li>a
+  color: #898989
+
 .inform
-  @extend .company
+  font-size: 16px
+  color: #898989
+  text-align: left
+  letter-spacing: 0.03em
+  line-height: 42px
+  list-style-type: none
+  text-transform: capitalize
 
 .shopCat
-  @extend .company
+  font-size: 16px
+  color: #898989
+  text-align: left
+  letter-spacing: 0.03em
+  line-height: 42px
+  list-style-type: none
+  text-transform: capitalize
 
 .company li:first-child
   line-height: 59px
@@ -738,7 +751,8 @@ footer
 
 .rights
   display: flex
-  justify-content: space-between
+  align-items: center
+  justify-content: center
   background-color: #e6e6e6
   width: 1600px
   height: 79px
@@ -756,10 +770,11 @@ footer
   line-height: 42px
 
 .socNet
+  width: 50%
   display: flex
-  align-items: flex-end
-  justify-content: space-around
+  align-items: baseline
+  justify-content: flex-end
 
 .icon
-  font-size: 32px
+  font-size: 48px
 
