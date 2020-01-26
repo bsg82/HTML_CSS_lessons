@@ -880,6 +880,7 @@ details[open] summary::after {
   padding-top: 59px;
   display: flex;
   flex-direction: row;
+  margin: 0 auto;
 }
 
 .select_box {
@@ -939,6 +940,84 @@ details[open] summary::after {
 .itemCards {
   margin-left: 50px;
   width: 846px;
+}
+
+.sortMenu {
+  height: 50px;
+  background-color: #f3f3f3;
+  display: flex;
+  align-items: center;
+}
+
+.sort, .show1 {
+  border: 1px solid #ebebeb;
+  background-color: #ffffff;
+  margin-left: 10px;
+  font-size: 14px;
+  color: #6f6e6e;
+  padding-left: 13px;
+  height: 30px;
+}
+
+.name1, .number {
+  border: 1px solid #ebebeb;
+  background-color: #ffffff;
+  font-size: 14px;
+  color: #6f6e6e;
+  padding-left: 13px;
+  height: 30px;
+}
+
+.catalogNav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.pageChange {
+  height: 44px;
+  width: 261px;
+  background-color: #ffffff;
+  border: 1px solid #ebebeb;
+  text-align: center;
+  vertical-align: center;
+}
+
+.pagination1 {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  list-style-type: none;
+}
+
+.pagination1 {
+  display: inline-flex;
+}
+
+.pagination1 li a {
+  font-size: 16px;
+  font-weight: 300;
+  color: #c4c4c4;
+  line-height: 44px;
+  padding: 15px 0 15px 15px;
+}
+
+.pagination1 li a:hover {
+  color: #ef5b70;
+}
+
+.viewAll {
+  border: solid 1px #ef5b70;
+  height: 44px;
+  width: 150px;
+  background-color: white;
+  border-radius: 3px;
+}
+
+.viewAll a {
+  font-size: 16px;
+  font-weight: 300;
+  color: #ef5b70;
+  text-transform: capitalize;
 }
 
 /*# sourceMappingURL=style.css.map */
