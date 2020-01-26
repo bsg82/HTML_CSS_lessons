@@ -776,6 +776,11 @@ footer {
 
 .icon {
   font-size: 48px;
+  color: white;
+}
+
+.icon:hover {
+  color: #f16d7f;
 }
 
 .announce {
@@ -869,6 +874,71 @@ details[open] summary::after {
   text-align: left;
   line-height: 33px;
   padding-left: 17px;
+}
+
+.catContent {
+  padding-top: 59px;
+  display: flex;
+  flex-direction: row;
+}
+
+.select_box {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 50px;
+}
+
+.trending {
+  width: 177px;
+}
+
+.size {
+  width: 236px;
+}
+
+.priceRange {
+  width: 263px;
+}
+
+.trendList li {
+  display: inline-flex;
+  flex-wrap: wrap;
+}
+
+.trendList li::before {
+  content: "|";
+  margin-left: 5px;
+  margin-right: 5px;
+  font-size: 14px;
+  color: #dfdfdf;
+}
+
+.trendList li a {
+  font-size: 14px;
+  color: #6f6e6e;
+}
+
+.trendList li:first-child::before {
+  content: "";
+}
+
+.size li {
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.select_box_h3 {
+  font-size: 14px;
+  font-weight: bold;
+  color: #6f6e6e;
+  text-transform: uppercase;
+  padding-bottom: 25px;
+}
+
+.itemCards {
+  margin-left: 50px;
+  width: 846px;
 }
 
 /*# sourceMappingURL=style.css.map */
