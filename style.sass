@@ -746,6 +746,7 @@ footer
   align-items: center
   justify-content: center
   background-color: #e6e6e6
+  background-size: cover
   width: 1600px
   height: 79px
   font-size: 16px
@@ -995,6 +996,7 @@ details[open] summary::after
   display: flex
   flex-direction: row
   background-color: black
+  background-size: cover
   justify-content: space-between
   padding-top: 48px
   padding-bottom: 31px
@@ -1134,6 +1136,90 @@ details[open] summary::after
 .Searchicon
   font-size: 35px
   
+.orders1
+  width: 1140px
+  margin: 0 auto
+  border-collapse: collapse
+  /*border: 1px black solid*/
+  & tr
+    /*border: 1px black solid*/
+    & td
+      /*border-top: 1px blue solid*/
+      /*border-bottom: 1px blue solid*/
+
+.itemName td
+  border-bottom: none
 
 
+.tableHead
+  font-size: 13px
+  font-weight: bold
+  color: #222222
+  letter-spacing: -0.01em
+  line-height: 20px
+  text-transform: uppercase
 
+.itemName
+  font-size: 13px
+  color: #222222
+  text-transform: uppercase
+
+.itemView img
+  width: 100px
+  height: 115px
+
+.action a
+  color: #c0c0c0
+  align-items: center
+
+.action a:hover
+    color: $ColorSite1
+    transform: scale(1.2, 0.5)
+
+.amount input
+  height: 30px
+  width: 54px
+  background-color: #ffffff
+  border: 1px solid #eaeaea
+
+.itemView
+  border-top: 1px #eaeaea solid
+  border-bottom: 1px #eaeaea solid
+
+.itemPrice1
+  @extend .itemView
+.amount
+  @extend .itemView
+.shipingFee
+  @extend .itemView
+.totalPrice
+  @extend .itemView
+.action
+  @extend .itemView
+.itemName
+  border-top: 1px #eaeaea solid
+.itemProp
+  border-bottom: 1px #eaeaea solid
+  font-family: 'Lato'
+  font-size: 13px
+  color: #575757
+  line-height: 20px
+  text-transform: capitalize
+.otherColor2
+  font-size: 13px
+  line-height: 20px
+  font-weight: 300
+  color: #6f6e6e
+  text-transform: capitalize
+
+.shopButtons
+  width: 1140px
+.shopButton1
+  height: 50px
+  width: 235px
+  background-color: #ffffff
+  border: 1px solid #eaeaea
+  text-transform: uppercase
+  font-size: 14px
+  font-weight: bold
+  color: #4a4a4a

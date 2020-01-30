@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Shopping Cart</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/516102d50d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<header class="header center">
+    <div class="header__left">
+        <a href="index.html" class="logo"><img class="logo__img" src="img/18.png" alt="logo">BRAN<span class="otherColor">D</span></a>
+        <form class="header__form" action="#">
+            <details class="header__browse">
+                <summary>Browse</summary>
+                <div class="drop drop_button">
+                    <ul class="browseList" >
+                        <li> <a href="#">Tees/Tank tops</a></li>
+                        <li><a href="#">Shirts/Polos </a></li>
+                        <li><a href="#">Sweaters </a></li>
+                        <li><a href="#">Sweatshirts/Hoodies</a></li>
+                        <li> <a href="#">Blazer</a></li>
+                    </ul>
+                </div>
+            </details>
+            <label>
+                <input class="browse_text" type="text" placeholder="Search for Item...">
+            </label>
+            <button><i class="Searchicon icon fas fa-search"></i></button>
+        </form>
+    </div>
+    <div class="header__right">
+        <a href="#"><img class="header__cart" src="img/cart.png" alt="cart"></a>
+
+        <details class="myAccount">
+            <summary>My Account</summary>
+        </details>
+    </div>
+</header>
+<nav class="nav center">
+    <ul class="menu">
+        <li class="menu__list"><a href="index.html" class="menu__link">Home </a></li>
+        <li class="menu__list">
+            <a href="#" class="menu__link">Man </a>
+            <div class="drop drop_last">
+                <div class="drop_flex">
+                    <h3 class="drop_h3"> WOMEN</h3>
+                    <ul class="drop_ul">
+                        <li><a href="#" class="drop_link">Dresses</a></li>
+                        <li><a href="#" class="drop_link">Tops</a></li>
+                        <li><a href="#" class="drop_link">Sweaters/Knits</a></li>
+                        <li><a href="#" class="drop_link">Jackets/Coats</a></li>
+                        <li><a href="#" class="drop_link">Blazers </a></li>
+                        <li><a href="#" class="drop_link">Denim</a></li>
+                        <li><a href="#" class="drop_link">Leggings/Pants</a></li>
+                        <li><a href="#" class="drop_link">Skirts/Shorts</a></li>
+                        <li><a href="#" class="drop_link">Accessories</a></li>
+                    </ul>
+                </div>
+
+                <div class="drop_flex">
+                    <h3 class="drop_h3"> WOMEN</h3>
+                    <ul class="drop_ul">
+                        <li><a href="#" class="drop_link">Dresses</a></li>
+                        <li><a href="#" class="drop_link">Tops</a></li>
+                        <li><a href="#" class="drop_link">Sweaters/Knits</a></li>
+                        <li><a href="#" class="drop_link">Jackets/Coats</a></li>
+                    </ul>
+                </div>
+                <div class="drop_flex">
+                    <h3 class="drop_h3"> WOMEN</h3>
+                    <ul class="drop_ul">
+                        <li><a href="#" class="drop_link">Dresses</a></li>
+                        <li><a href="#" class="drop_link">Tops</a></li>
+                        <li><a href="#" class="drop_link">Sweaters/Knits</a></li>
+                    </ul>
+                </div>
+            </div>
+        </li>
+        <li class="menu__list"><a href="#" class="menu__link">Women </a></li>
+        <li class="menu__list"><a href="#" class="menu__link">Kids </a></li>
+        <li class="menu__list"><a href="#" class="menu__link">ACCESSORIES </a></li>
+        <li class="menu__list"><a href="#" class="menu__link">Featured </a></li>
+        <li class="menu__list"><a href="#" class="menu__link">Hot Deals</a></li>
+    </ul>
+</nav>
+<div class="announce">
+    <div class="ad">
+        New Arrivals
+    </div>
+    <div class="crumbs">
+        <ul class="breadCrumbs">
+            <li><a href="index.html">home</a></li>
+            <li><a href="#">men</a></li>
+            <li><a href="catalog.html">new arrivals</a></li>
+        </ul>
+    </div>
+</div>
+<table class="orders1">
+    <tr class="tableHead">
+        <td>product details</td>
+        <td></td>
+        <td>unite price</td>
+        <td>quantity</td>
+        <td>shipping</td>
+        <td>subtotal</td>
+        <td>action</td>
+    </tr>
+    <tr class="order1">
+        <td rowspan="2" class="itemView"><img src="img/2879.png" alt=""></td>
+        <td class="itemName">mango people t-shirt</td>
+        <td rowspan="2" class="itemPrice1">$150</td>
+        <td rowspan="2" class="amount"><input type="text"></td>
+        <td rowspan="2" class="shipingFee">free</td>
+        <td rowspan="2" class="totalPrice">$300</td>
+        <td rowspan="2" class="action"><a href=""><i class="fas fa-times-circle"></i></a></td>
+    </tr>
+    <tr class="itemProp">
+        <td>color: <span class="otherColor2">red</span> <br>
+            size: <span class="otherColor2">xll</span></td>
+    </tr>
+    <tr class="order2">
+        <td rowspan="2" class="itemView"><img src="img/2905.png" alt=""></td>
+        <td class="itemName">mango people t-shirt</td>
+        <td rowspan="2" class="itemPrice1">$150</td>
+        <td rowspan="2" class="amount"><input type="text"></td>
+        <td rowspan="2" class="shipingFee">free</td>
+        <td rowspan="2" class="totalPrice">$300</td>
+        <td rowspan="2" class="action"><a href=""><i class="fas fa-times-circle"></i></a></td>
+    </tr>
+    <tr>
+        <td class="itemProp"> color: <span class="otherColor2">red</span> <br>
+            size: <span class="otherColor2">xll</span></td>
+    </tr>
+    <tr class="order3">
+        <td rowspan="2" class="itemView"><img src="img/2920.png" alt=""></td>
+        <td class="itemName">mango people t-shirt</td>
+        <td rowspan="2" class="itemPrice1">$150</td>
+        <td rowspan="2" class="amount"><input type="text"></td>
+        <td rowspan="2" class="shipingFee">free</td>
+        <td rowspan="2" class="totalPrice">$300</td>
+        <td rowspan="2" class="action"><a href="#"><i class="fas fa-times-circle"></i></a></td>
+    </tr>
+    <tr>
+        <td class="itemProp"> color: <span class="otherColor2"> red </span> <br>
+            size: <span class="otherColor2"> xll</span> </td>
+    </tr>
+</table>
+<section class="shopButtons">
+    <button class="shopButton1" style="float: left">Clear shopping cart</button>
+    <button class="shopButton1" style="float: right">continue shopping</button>
+</section>
+<section class="subscribe">
+    <div class="message">
+        <div class="portrait"><img src="img/face1.png" alt="Rozha"></div>
+        <div class="messageText">
+            <p> “Vestibulum quis porttitor dui! Quisque viverra nunc mi,
+                a pulvinar purus condimentum a. Aliquam condimentum mattis neque sed pretium”
+            </p>
+            <div class="name">Bin Burhan </div>
+            <div class="place">Dhaka, Bd</div>
+        </div>
+        <div class="pagination">
+            <a href="#" class="navLine"></a>
+            <a href="#" class="navLine navLine-active"></a>
+            <a href="#" class="navLine"></a>
+        </div>
+    </div>
+    <div class="newsSubscribe">
+        <p class="headlineHead">Subscribe</p>
+        <p class="headlineText">FOR OUR NEWSLETTER AND PROMOTION</p>
+        <form action="#">
+            <label>
+                <input placeholder="Enter Your Email" type="email">
+            </label>
+            <input type="submit" class="submit2" value="Subscribe">
+        </form>
+    </div>
+</section>
+
+<footer>
+    <div class="footerContent">
+        <div class="footerText">
+            <a href="index.html" class="logo"><img class="logo__img" src="img/18.png" alt="logo">BRAN
+                <span class="otherColor">D</span></a>
+            <p class="footerInf">Objectively transition extensive data rather than cross
+                functional
+                solutions. Monotonectally syndicate multidisciplinary materials before
+                go&nbsp;forward benefits. Intrinsicly syndicate an&nbsp;expanded array
+                of&nbsp;processes and cross-unit partnerships.
+                <br>
+                Efficiently plagiarize 24/365 action items and focused infomediaries.
+                Distinctively seize superior initiatives for wireless technologies. Dynamically
+                optimize.</p>
+        </div>
+        <nav class="footerMenu">
+            <div class="Complist">
+                <h4 class="Company_h4">Company</h4>
+                <ul class="company">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">How it Works</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="Infolist">
+                <h4 class="inform_h4">Information</h4>
+                <ul class="inform">
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">How to Buy</a></li>
+                    <li><a href="#">How to Sell</a></li>
+                    <li><a href="#">Promotion</a></li>
+                </ul>
+            </div>
+            <div class="ShopCatlist">
+                <h4 class="shopCat_h4">Shop Category</h4>
+                <ul class="shopCat">
+                    <li><a href="#">Men</a></li>
+                    <li><a href="#">Women</a></li>
+                    <li><a href="#">Child</a></li>
+                    <li><a href="#">Apparel</a></li>
+                    <li><a href="#">Browse All</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <div class="rights">
+        <div class="rights_text">
+            <h6 class="footer_h6">&copy; 2020 Brand All Rights Reserved.</h6></div>
+        <div class="socNet">
+            <a href="#"><i class="fab fa-facebook-square icon"></i></a>
+            <a href="#"><i class="fab fa-twitter-square icon"></i></a>
+            <a href="#"><i class="fab fa-linkedin icon"></i></a>
+            <a href="#"><i class="fab fa-pinterest-square icon"></i></a>
+            <a href="#"><i class="fab fa-google-plus-square icon"></i></a>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
