@@ -95,7 +95,7 @@
         <ul class="breadCrumbs">
             <li><a href="index.html">home</a></li>
             <li><a href="#">men</a></li>
-            <li><a href="catalog.html">new arrivals</a></li>
+            <li><a href="catalog.html" class="breadCrumbs_active">new arrivals</a></li>
         </ul>
     </div>
 </div>
@@ -113,7 +113,7 @@
         <td rowspan="2" class="itemView"><img src="img/2879.png" alt=""></td>
         <td class="itemName">mango people t-shirt</td>
         <td rowspan="2" class="itemPrice1">$150</td>
-        <td rowspan="2" class="amount"><input type="text"></td>
+        <td rowspan="2" class="amount"><input type="text" placeholder="2"></td>
         <td rowspan="2" class="shipingFee">free</td>
         <td rowspan="2" class="totalPrice">$300</td>
         <td rowspan="2" class="action"><a href=""><i class="fas fa-times-circle"></i></a></td>
@@ -126,7 +126,7 @@
         <td rowspan="2" class="itemView"><img src="img/2905.png" alt=""></td>
         <td class="itemName">mango people t-shirt</td>
         <td rowspan="2" class="itemPrice1">$150</td>
-        <td rowspan="2" class="amount"><input type="text"></td>
+        <td rowspan="2" class="amount"><input type="text" placeholder="2"></td>
         <td rowspan="2" class="shipingFee">free</td>
         <td rowspan="2" class="totalPrice">$300</td>
         <td rowspan="2" class="action"><a href=""><i class="fas fa-times-circle"></i></a></td>
@@ -139,7 +139,7 @@
         <td rowspan="2" class="itemView"><img src="img/2920.png" alt=""></td>
         <td class="itemName">mango people t-shirt</td>
         <td rowspan="2" class="itemPrice1">$150</td>
-        <td rowspan="2" class="amount"><input type="text"></td>
+        <td rowspan="2" class="amount"><input type="text" placeholder="2"></td>
         <td rowspan="2" class="shipingFee">free</td>
         <td rowspan="2" class="totalPrice">$300</td>
         <td rowspan="2" class="action"><a href="#"><i class="fas fa-times-circle"></i></a></td>
@@ -149,10 +149,42 @@
             size: <span class="otherColor2"> xll</span> </td>
     </tr>
 </table>
-<section class="shopButtons">
+<section class="shopButtons center">
     <button class="shopButton1" style="float: left">Clear shopping cart</button>
     <button class="shopButton1" style="float: right">continue shopping</button>
 </section>
+
+<form class="purchaseDetails center">
+    <div class="Shippadress">
+        <h1 class="Shippadress_h1">Shipping Adress</h1>
+        <select name="countryName" class="countryName">
+            <option disabled> Select your country </option>
+            <option value="Bangladesh">Bangladesh</option>
+            <option value="Russia">Russia</option>
+        </select>
+        <input type="text" placeholder="State" class="stateName">
+        <input type="text" placeholder="Postcode/Zip" class="postCode">
+        <button class="formButton1">Get a quote</button>
+    </div>
+    <div class="discount">
+        <h1 class="Shippadress_h1">coupon discount</h1>
+        <h3 class="Shippadress_h3">Enter your coupon code if you have one</h3>
+        <input type="text" placeholder="State" class="stateName">
+        <button class="formButton2">Apply coupon</button>
+    </div>
+    <div class="toCheckout">
+        <div class="toCheckout__text">
+            <h3 class="toCheckout__text_h3">
+            Sub total $900
+        </h3>
+     <h1 class="toCheckout__text_h1">
+         GRAND TOTAL <span style=" color:#f16d7f">$900</span>
+        </h1>
+        </div>
+        <submit class="toCheckout_Button">proceed to checkout</submit>
+    </div>
+</form>
+
 <section class="subscribe">
     <div class="message">
         <div class="portrait"><img src="img/face1.png" alt="Rozha"></div>
@@ -174,7 +206,7 @@
         <p class="headlineText">FOR OUR NEWSLETTER AND PROMOTION</p>
         <form action="#">
             <label>
-                <input placeholder="Enter Your Email" type="email">
+                <input placeholder="Enter Your Email"  type="email" pattern="\S+@[a-z]+.[a-z]+">
             </label>
             <input type="submit" class="submit2" value="Subscribe">
         </form>

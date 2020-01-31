@@ -819,6 +819,15 @@ footer {
   color: #636363;
 }
 
+.breadCrumbs_active ul li a {
+  font-size: 14px;
+  font-weight: bold;
+  color: #f16d7f;
+  text-align: center;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
 .breadCrumbs li::before {
   content: "/";
   margin-left: 5px;
@@ -1178,7 +1187,7 @@ details[open] summary::after {
 
 .orders1 {
   width: 1140px;
-  margin: 0 auto;
+  margin: 90px auto 0;
   border-collapse: collapse;
   /*border: 1px black solid*/
 }
@@ -1209,9 +1218,11 @@ details[open] summary::after {
   text-transform: uppercase;
 }
 
-.itemView img, .action img, .totalPrice img, .shipingFee img, .amount img, .itemPrice1 img {
+.itemView img, .action img, .amount img, .itemPrice1 img, .shipingFee img, .totalPrice img {
   width: 100px;
   height: 115px;
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
 
 .action a {
@@ -1229,9 +1240,18 @@ details[open] summary::after {
   width: 54px;
   background-color: #ffffff;
   border: 1px solid #eaeaea;
+  text-align: center;
+  font-size: 13px;
+  color: #656565;
 }
 
-.itemView, .action, .totalPrice, .shipingFee, .amount, .itemPrice1 {
+.itemPrice1, .totalPrice, .shipingFee {
+  font-size: 13px;
+  color: #656565;
+  line-height: 20px;
+}
+
+.itemView, .action, .amount, .itemPrice1, .shipingFee, .totalPrice {
   border-top: 1px #eaeaea solid;
   border-bottom: 1px #eaeaea solid;
 }
@@ -1242,7 +1262,6 @@ details[open] summary::after {
 
 .itemProp {
   border-bottom: 1px #eaeaea solid;
-  font-family: "Lato";
   font-size: 13px;
   color: #575757;
   line-height: 20px;
@@ -1259,6 +1278,9 @@ details[open] summary::after {
 
 .shopButtons {
   width: 1140px;
+  margin-top: 44px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .shopButton1 {
@@ -1270,6 +1292,112 @@ details[open] summary::after {
   font-size: 14px;
   font-weight: bold;
   color: #4a4a4a;
+}
+
+.purchaseDetails {
+  margin-top: 63px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.Shippadress, .discount {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.discount {
+  margin-left: 35px;
+}
+
+.countryName, .postCode, .stateName {
+  height: 45px;
+  width: 357px;
+  font-size: 13px;
+  font-weight: 300;
+  color: #b1b1b1;
+  margin-top: 20px;
+}
+
+.formButton1 {
+  margin-top: 20px;
+  font-size: 11px;
+  font-weight: bold;
+  color: #4a4a4a;
+  text-transform: uppercase;
+  height: 35px;
+  width: 118px;
+}
+
+.formButton2 {
+  margin-top: 25px;
+  font-size: 11px;
+  font-weight: bold;
+  color: #4a4a4a;
+  text-transform: uppercase;
+  height: 35px;
+  width: 118px;
+}
+
+.Shippadress_h3 {
+  font-size: 14px;
+  font-weight: 300;
+  color: #000000;
+}
+
+.Shippadress_h1 {
+  font-size: 16px;
+  font-weight: bold;
+  color: #222222;
+  text-transform: uppercase;
+}
+
+.toCheckout {
+  height: 214px;
+  background-color: #f5f3f3;
+  display: flex;
+  flex-direction: column;
+  margin-left: 36px;
+}
+
+.toCheckout__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  border-bottom: 1px solid #eaeaea;
+  margin-right: 42px;
+  margin-left: 44px;
+}
+
+.toCheckout_Button {
+  height: 50px;
+  width: 273px;
+  background-color: #f16d7f;
+  font-size: 16px;
+  font-weight: bold;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 19px 42px 18px;
+  margin: 44px 44px 42px;
+}
+
+.toCheckout__text_h3 {
+  font-size: 11px;
+  color: #4a4a4a;
+  text-transform: uppercase;
+  text-align: right;
+  margin-top: 40px;
+}
+
+.toCheckout__text_h1 {
+  font-size: 16px;
+  font-weight: bold;
+  color: #222222;
+  text-transform: uppercase;
+  text-align: right;
+  margin-top: 14px;
+  padding-bottom: 15px;
 }
 
 /*# sourceMappingURL=style.css.map */
