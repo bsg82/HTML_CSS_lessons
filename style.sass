@@ -54,15 +54,15 @@ a
   margin-right: 13px
   width: 59px
   height: 51px
-
+.logo__img:hover
+  transform: rotate(-90deg)
 
 .otherColor
   font-size: 27px
   font-weight: 900
   color: $ColorSite1
 
-
-.myAccount 
+.myAccount
   font-size: 15px
   color: #ffffff
   text-align: center
@@ -89,6 +89,8 @@ a
   padding: 20px
   display: block
 
+.menu__link:hover
+  transform: scale(1.5,1.5)
 .menu__list
   position: relative
 
@@ -358,6 +360,7 @@ a
   position: relative
   &:hover
     box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.16)
+    transform: scale(1.02,1.02)
     &.product__add
       display: flex
     &.product__img
@@ -771,9 +774,13 @@ footer
 .icon
   font-size: 48px
   color: white
+  transition: all
 
 .icon:hover
   color: #f16d7f
+  transform: scale(1.5)
+  transition: 2s
+
 
 .announce
   width: 100%
