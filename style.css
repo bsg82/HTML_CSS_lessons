@@ -1404,4 +1404,124 @@ details[open] summary::after {
   padding-bottom: 15px;
 }
 
+.Checkout__data {
+  margin-top: 89px;
+}
+
+.order__form_line {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #e8e8e8;
+  border-bottom: 1px solid #e8e8e8;
+  border-collapse: collapse;
+  padding-top: 34px;
+  padding-bottom: 34px;
+}
+
+.of_left {
+  display: flex;
+  flex-direction: column;
+}
+
+.of_right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.order__form_h1 {
+  font-size: 16px;
+  font-weight: bold;
+  color: #222222;
+  text-transform: uppercase;
+}
+
+.order__form_h2 {
+  font-size: 13px;
+  color: #222222;
+  text-transform: uppercase;
+  margin-top: 40px;
+}
+
+.order__form_h3 {
+  font-size: 13px;
+  color: #b3b2b2;
+  line-height: 20px;
+}
+
+.order__form_h4 {
+  font-size: 13px;
+  color: #ff0d0d;
+  line-height: 20px;
+}
+
+#radioButton1, #radioButton2 {
+  background-color: #ffffff;
+  border: 2px solid #555555;
+  border-radius: 14px;
+}
+
+.button_box {
+  box-sizing: border-box;
+  margin-top: 34px;
+}
+
+.button_box label {
+  font-size: 12px;
+  color: #222222;
+  text-align: right;
+  text-transform: uppercase;
+}
+
+.order__form_button {
+  height: 50px;
+  width: 180px;
+  background-color: #ffffff;
+  border: 1px solid #eaeaea;
+  font-size: 14px;
+  font-weight: bold;
+  color: #4a4a4a;
+  text-transform: uppercase;
+  margin-top: 34px;
+  text-align: center;
+  padding-top: 19px;
+}
+.order__form_button:hover {
+  transform: scale(1.1, 1.1);
+}
+
+#email2 {
+  height: 45px;
+  width: 390px;
+  background-color: #ffffff;
+  outline: 1px solid #eaeaea;
+  border-radius: 0;
+  padding: 0;
+}
+
+#password2 {
+  height: 45px;
+  width: 390px;
+  background-color: #ffffff;
+  outline: 1px solid #eaeaea;
+}
+
+.of_right a {
+  float: right;
+  font-size: 14px;
+  color: #222222;
+  display: block;
+  margin-top: 40px;
+}
+.of_right a:hover {
+  transform: scale(2, 2);
+  color: #f16d7f;
+}
+
+.loging {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 /*# sourceMappingURL=style.css.map */

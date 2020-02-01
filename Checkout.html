@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title> Shopping Cart</title>
+    <title>Check out</title>
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/516102d50d.js" crossorigin="anonymous"></script>
@@ -95,95 +95,62 @@
         <ul class="breadCrumbs">
             <li><a href="index.html">home</a></li>
             <li><a href="#">men</a></li>
-            <li><a href="catalog.html" class="breadCrumbs_active">new arrivals</a></li>
+            <li><a href="catalog.html">new arrivals</a></li>
         </ul>
     </div>
 </div>
-<table class="orders1">
-    <tr class="tableHead">
-        <td>product details</td>
-        <td></td>
-        <td>unite price</td>
-        <td>quantity</td>
-        <td>shipping</td>
-        <td>subtotal</td>
-        <td>action</td>
-    </tr>
-    <tr class="order1">
-        <td rowspan="2" class="itemView"><img src="img/2879.png" alt=""></td>
-        <td class="itemName">mango people t-shirt</td>
-        <td rowspan="2" class="itemPrice1">$150</td>
-        <td rowspan="2" class="amount"><input type="text" placeholder="2"></td>
-        <td rowspan="2" class="shipingFee">free</td>
-        <td rowspan="2" class="totalPrice">$300</td>
-        <td rowspan="2" class="action"><a href=""><i class="fas fa-times-circle"></i></a></td>
-    </tr>
-    <tr class="itemProp">
-        <td>color: <span class="otherColor2">red</span> <br>
-            size: <span class="otherColor2">xll</span></td>
-    </tr>
-    <tr class="order2">
-        <td rowspan="2" class="itemView"><img src="img/2905.png" alt=""></td>
-        <td class="itemName">mango people t-shirt</td>
-        <td rowspan="2" class="itemPrice1">$150</td>
-        <td rowspan="2" class="amount"><input type="text" placeholder="2"></td>
-        <td rowspan="2" class="shipingFee">free</td>
-        <td rowspan="2" class="totalPrice">$300</td>
-        <td rowspan="2" class="action"><a href=""><i class="fas fa-times-circle"></i></a></td>
-    </tr>
-    <tr>
-        <td class="itemProp"> color: <span class="otherColor2">red</span> <br>
-            size: <span class="otherColor2">xll</span></td>
-    </tr>
-    <tr class="order3">
-        <td rowspan="2" class="itemView"><img src="img/2920.png" alt=""></td>
-        <td class="itemName">mango people t-shirt</td>
-        <td rowspan="2" class="itemPrice1">$150</td>
-        <td rowspan="2" class="amount"><input type="text" placeholder="2"></td>
-        <td rowspan="2" class="shipingFee">free</td>
-        <td rowspan="2" class="totalPrice">$300</td>
-        <td rowspan="2" class="action"><a href="#"><i class="fas fa-times-circle"></i></a></td>
-    </tr>
-    <tr>
-        <td class="itemProp"> color: <span class="otherColor2"> red </span> <br>
-            size: <span class="otherColor2"> xll</span> </td>
-    </tr>
-</table>
-<section class="shopButtons center">
-    <button class="shopButton1" style="float: left">Clear shopping cart</button>
-    <button class="shopButton1" style="float: right">continue shopping</button>
-</section>
-
-<form class="purchaseDetails center">
-    <div class="Shippadress">
-        <h1 class="Shippadress_h1">Shipping Adress</h1>
-        <select name="countryName" class="countryName">
-            <option disabled> Select your country </option>
-            <option value="Bangladesh">Bangladesh</option>
-            <option value="Russia">Russia</option>
-        </select>
-        <input type="text" placeholder="State" class="stateName">
-        <input type="text" placeholder="Postcode/Zip" class="postCode">
-        <button class="formButton1">Get a quote</button>
-    </div>
-    <div class="discount">
-        <h1 class="Shippadress_h1">coupon discount</h1>
-        <h3 class="Shippadress_h3">Enter your coupon code if you have one</h3>
-        <input type="text" placeholder="State" class="stateName">
-        <button class="formButton2">Apply coupon</button>
-    </div>
-    <div class="toCheckout">
-        <div class="toCheckout__text">
-            <h3 class="toCheckout__text_h3">
-            Sub total $900
-        </h3>
-     <h1 class="toCheckout__text_h1">
-         GRAND TOTAL <span style=" color:#f16d7f">$900</span>
-        </h1>
+<section class="Checkout__data center">
+    <form action="#" class="order__form">
+        <div class="order__form_line order__form_line-active">
+        <div class="of_left">
+            <h1 class="order__form_h1">01. Shipping Adress</h1>
+            <h2 class="order__form_h2">Check as a guest or register</h2>
+            <h3 class="order__form_h3">Register with us for future convenience</h3>
+            <div class="button_box">
+                <input type="radio" id="radioButton1" name="radBut1">
+                <label for="radioButton1">checkout as guest</label>
+                <br>
+                <input type="radio" id="radioButton2" name="radBut1">
+                <label for="radioButton2">register</label>
+            </div>
+            <h2 class="order__form_h2">register and save time!</h2>
+            <h3 class="order__form_h3">
+                <br>
+                Register with us for future convenience
+                <br>
+                <br>
+                >>Fast and easy checkout
+                <br>
+                >>Easy access to your order history and status
+            </h3>
+            <submit class="order__form_button">Continue</submit>
         </div>
-        <submit class="toCheckout_Button"><a href="Checkout.html">proceed to checkout</a></submit>
-    </div>
-</form>
+            <div class="of_right">
+                <h2 class="order__form_h2">Already registed?</h2>
+                <h3 class="order__form_h3">Please log in below</h3>
+                <label for="email2"> EMAIL ADDRESS *</label>
+                <input type="email" required id="email2" pattern="\S+@[a-z]+.[a-z]+">
+                <label for="password2">PASSWORD *</label>
+                <input type="password" required id="password2">
+
+                <h4 class="order__form_h4">* Required Fileds</h4>
+                <div class="loging">
+                    <submit class="order__form_button">Log in</submit>
+                    <a href="#" class="restorePass">Forgot Password ?</a>
+                </div>
+            </div>
+        </div>
+        <div class="order__form_right">
+
+        </div>
+        <div class="order__form_line">02. BILLING INFORMATION</div>
+        <div class="order__form_line">03. SHIPPING INFORMATION</div>
+        <div class="order__form_line">04. SHIPPING METHOD</div>
+        <div class="order__form_line">05. PAYMENT METHOD</div>
+        <div class="order__form_line">06. ORDER REVIEW</div>
+
+    </form>
+</section>
 
 <section class="subscribe">
     <div class="message">
@@ -206,13 +173,12 @@
         <p class="headlineText">FOR OUR NEWSLETTER AND PROMOTION</p>
         <form action="#">
             <label>
-                <input placeholder="Enter Your Email"  type="email" pattern="\S+@[a-z]+.[a-z]+">
+                <input placeholder="Enter Your Email" type="email" pattern="\S+@[a-z]+.[a-z]+">
             </label>
             <input type="submit" class="submit2" value="Subscribe">
         </form>
     </div>
 </section>
-
 <footer>
     <div class="footerContent">
         <div class="footerText">
