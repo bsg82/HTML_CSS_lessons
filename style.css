@@ -436,6 +436,8 @@ a {
   line-height: 38px;
   border-radius: 3px 0 0 3px;
   margin: 0 auto;
+  height: 48px;
+  width: 212px;
 }
 
 .all_browse a {
@@ -1033,6 +1035,8 @@ details[open] summary::after {
   width: 150px;
   background-color: white;
   border-radius: 3px;
+  text-align: center;
+  vertical-align: middle;
 }
 
 .viewAll a {
@@ -1040,6 +1044,7 @@ details[open] summary::after {
   font-weight: 300;
   color: #ef5b70;
   text-transform: capitalize;
+  vertical-align: middle;
 }
 
 .details2 {
@@ -1170,11 +1175,13 @@ details[open] summary::after {
   height: 55px;
   background-color: #ffffff;
   border: 1px solid #ef5b70;
-  margin-top: 28px;
   font-size: 16px;
   font-weight: bold;
   color: #ef5b70;
   vertical-align: middle;
+  text-align: center;
+  margin-top: 18px;
+  padding-top: 10px;
 }
 
 .itemPrice {
